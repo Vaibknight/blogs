@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-white">
+      <div style="margin: 40px 0px">
+        <div style="margin: 0 auto; width: 65%">
+          <div class="flex">
+            <div class="flex-1 w-64 ...">
+              <div style="margin: 10px 0px">BLOG</div>
+            </div>
+            <div>
+              <div>
+                <div class="w-5/6 ...">
+                  <div class="flex">
+                    <div class="flex-grow w-40 ...">
+                      <div>
+                        <div style="margin: 8px 0px">
+                          <i class="fa fa-facebook"></i>
+                          &nbsp;&nbsp;
+                          <i class="fa fa-twitter"></i>
+                          &nbsp;&nbsp;
+                          <i class="fa fa-instagram"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-80 ...">
+                      <div
+                        style="margin: 0 auto; width: 90%"
+                        class="rounded-full"
+                      >
+                        <input
+                          st
+                          class="placeholder:italic placeholder:text-slate-400 block inline bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                          placeholder="Search for anything..."
+                          type="text"
+                          name="search"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-40 ...">
+                      <div class="margin: 0 auto; width: 76%;">
+                        <button
+                          style="
+                            border-radius: 30px;
+                            background: #000;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            border-color: #000;
+                            height: 36px;
+                            width: 64px;
+                          "
+                          class=""
+                        >
+                          <i class="fa fa-search text-stone-50"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="" style="margin: 0 auto; width: 88%">
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <div class="relative">
+              <button
+                type="button"
+                class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                aria-expanded="false"
+              >
+                HOME
+                <svg
+                  class="h-5 w-5 flex-none text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >CATEGORIES</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >POLITICS</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >BUSINESS</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >HEALTH</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >DESIGN</a
+            >
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >CONTACT</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt=""
+              />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-1"
+                    aria-expanded="false"
+                  >
+                    Product
+                    <!--
+                  Expand/collapse icon, toggle classes based on menu open state.
+
+                  Open: "rotate-180", Closed: ""
+                -->
+                    <svg
+                      class="h-5 w-5 flex-none"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                  <div class="mt-2 space-y-2" id="disclosure-1">
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Analytics</a
+                    >
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Engagement</a
+                    >
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Security</a
+                    >
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Integrations</a
+                    >
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Automations</a
+                    >
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Watch demo</a
+                    >
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >Contact sales</a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Features</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Marketplace</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Company</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+        <div>
+            <div>
+                <div style="margin: 0 auto;
+                width: 67%;">
+                    <div style="margin : 20px 0px" class="underline underline-offset-4 text-2xl">
+                        BLOGS
+                    </div>
+                </div>
+                <div class="articles">
+                    <article>
+                      <div class="article-wrapper">
+                        <figure>
+                          <img src="img/1.jpg" alt="" />
+                        </figure>
+                        <div class="article-body">
+                          <h2>BBQ Tofu</h2>
+                          <p>
+                            Think tofu is just for vegans? Think again. This easy BBQ tofu recipe is packed with bold flavor. It's sweet, savory, and smoky...everyone will love it!                          </p>
+                          <a href="https://www.loveandlemons.com/bbq-tofu/" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                    <article>
+                  
+                      <div class="article-wrapper">
+                        <figure>
+                          <img src="img/2.jpg" alt="" />
+                        </figure>
+                        <div class="article-body">
+                          <h2>How to Cook Spaghetti Squash</h2>
+                          <p>
+                            Spaghetti squash is such a fun, underrated vegetable! Here is my favorite way to cook it, along with a few tips and recipes.                          </p>
+                          <a href="https://www.loveandlemons.com/how-to-cook-spaghetti-squash/" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                    <article>
+                  
+                      <div class="article-wrapper">
+                        <figure>
+                          <img src="img/4.jpg" alt="" />
+                        </figure>
+                        <div class="article-body">
+                          <h2>Perfect Baked Potato</h2>
+                          <p>
+                            A perfect baked potato has crispy skin and fluffy insides. My method for how to bake a potato works every time, so load up your spuds, and dig in!                          </p>
+                          <a href="https://www.loveandlemons.com/baked-potato/" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div>
+          <div>
+              <div class="articles">
+                  <article>
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="img/3.jpg" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>How to Press Tofu</h2>
+                        <p>
+                          Learn how to press tofu with and without a tofu press! These two easy methods take just 30 minutes. They'll help you cook crispy tofu every time!                        </p>
+                        <a href="https://www.loveandlemons.com/how-to-press-tofu/" class="read-more">
+                          Read more <span class="sr-only">about this is some title</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="img/5.jpg" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>Homemade BBQ Sauce</h2>
+                        <p>
+                          This easy homemade BBQ sauce recipe is sweet, tangy, and seasoned to perfection with a flavorful mix of spices. Great for summer grilling!                        </p>
+                        <a href="https://www.loveandlemons.com/bbq-sauce-recipe/" class="read-more">
+                          Read more <span class="sr-only">about this is some title</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="img/6.jpg" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>60 Healthy Breakfast Ideas</h2>
+                        <p>
+                          Stuck in a breakfast rut? Find over 60 healthy breakfast ideas below! With sweet, savory, easy & make-ahead options, we have something for everyone.                        </p>
+                        <a href="https://www.loveandlemons.com/healthy-breakfast-ideas/" class="read-more">
+                          Read more <span class="sr-only">about this is some title</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section>
+    <div>
+        <div>
+            <div class="articles">
+                <article>
+                  <div class="article-wrapper">
+                    <figure>
+                      <img src="img/7.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                      <h2>Vegan Burrito</h2>
+                      <p>
+                        You won't miss the meat or dairy in this vegan burrito recipe. It's super easy to make, and the rice, bean, and veggie filling is SO flavorful and satisfying!                      </p>
+                      <a href="https://www.loveandlemons.com/vegan-burrito/" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article>
+              
+                  <div class="article-wrapper">
+                    <figure>
+                      <img src="img/8.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                      <h2>31 Easy Plant-Based Recipes</h2>
+                      <p>
+                        These easy plant-based recipes will satisfy any craving! They include vibrant grain bowls, hearty veggie burgers, noodles, sushi, and more.                      </p>
+                      <a href="https://www.loveandlemons.com/plant-based-recipes/" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article>
+              
+                  <div class="article-wrapper">
+                    <figure>
+                      <img src="img/9.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                      <h2>How to Fold A Burrito</h2>
+                      <p>
+                        Learn how to fold a burrito with this step-by-step guide! You'll be able to roll (and eat!) a burrito without the tortilla tearing or the filling spilling out.                      </p>
+                      <a href="https://www.loveandlemons.com/how-to-fold-a-burrito/" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+  <div style="    margin: 0 auto;
+      width: 76%;">
+    <div style="    margin: 100px 0px;
+    ">
+      <div>
+        <div class="flex">
+          <div class="flex-auto w-80 ...">
+            <div>
+              <div style="margin-bottom: 70px;">
+                <h1 class="underline underline-offset-4 text-2xl">Recent News</h1>
+              </div>
+              <div class="flex">
+                <div class="flex-1 w-64 ...">
+                   <div>
+                      <div class="text-sm font-bold my-4">
+                        Scientists Develop New Radio System, Crucial During Natural Disasters - Oneindia...
+                      </div>
+                      <div class="text-sm my-4 ">
+                        A new model for radio wave propagation through the ionosphere, developed by scientists of Indian Institute of Geomagnetism (IIG), can help estimate the impact of space weather and facilitate the planning and operation of high-frequency (HF) radio communicatio…...                      </div>
+                      <div class="text-sm ">
+                        <a>Sanjeev Nayak</a>
+                        <a class="text-gray-400">in</a>
+                        <a>News</a>
+                      </div>
+                      <div class="text-sm ">
+                        <a class="text-gray-400">Sat, 17 Jun 2023 </a>
+                        <a class="text-gray-400">•</a>
+                        <a class="text-gray-400">3 min read</a>
+                      </div>
+                   </div>
+                </div>
+                <div class="flex-initial w-64 ...">
+                  <img src="img/10.jpg">
+                </div>
+              </div>
+              <div>
+
+              </div>
+            </div> 
+          </div>
+          <div class="flex-auto w-32 ...">
+            <div style="    margin: 0 auto;
+            width: 70%;">
+              <div>
+                <h1 style="margin-bottom: 70px;" class="underline underline-offset-4 text-2xl">
+                  Popular Posts
+                </h1>
+              </div>
+              <div>
+                <div>
+                  <h1 class="inline-block text-gray-400 text-4xl">
+                    01
+                  </h1>
+                  <a>News Needs to Meet Its Audiences Where They Are</a>
+                </div>
+                <div class="text-sm ">
+                  <a>Dave Rogers</a>
+                  <a class="text-gray-400">in</a>
+                  <a>News</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="flex-auto w-80 ...">
+            <div>
+              <div style="margin-bottom: 70px;">
+              </div>
+              <div class="flex">
+                <div class="flex-1 w-64 ...">
+                   <div>
+                      <div class="text-sm font-bold my-4">
+                        Elderly civilian killed, 4 cops injured amid clashes over masjid demolition plan in Gujarat’s Junagadh; 174 detained - The Indian Express...                      </div>
+                      <div class="text-sm my-4 ">
+                        According to the SP, the Junagadh Municipal Corporation had issued notice to Geban Shah Masjid near Majewadi gate on June 14 saying they have to produce relevant papers within five days....                     </div>
+                      <div class="text-sm ">
+                        <a> Express News Service </a>
+                        <a class="text-gray-400">in</a>
+                        <a>News</a>
+                      </div>
+                      <div class="text-sm ">
+                        <a class="text-gray-400"> Sat, 17 Jun 2023</a>
+                        <a class="text-gray-400">•</a>
+                        <a class="text-gray-400">3 min read</a>
+                      </div>
+                   </div>
+                </div>
+                <div class="flex-initial w-64 ...">
+                  <img src="img/11.jpg">
+                </div>
+              </div>
+              <div>
+
+              </div>
+            </div> 
+          </div>
+          <div class="flex-auto w-32 ...">
+            <div style="    margin: 0 auto;
+            width: 70%;">
+              <div>
+                <h1 style="margin-bottom: 70px;">
+                
+                </h1>
+              </div>
+              <div>
+                <div>
+                  <h1 class="inline-block text-gray-400 text-4xl">
+                    02
+                  </h1>
+                  <a>News Needs to Meet Its Audiences Where They Are</a>
+                </div>
+                <div class="text-sm ">
+                  <a>Dave Rogers</a>
+                  <a class="text-gray-400">in</a>
+                  <a>News</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="flex-auto w-80 ...">
+            <div>
+              <div style="margin-bottom: 70px;">
+                
+              </div>
+              <div class="flex">
+                <div class="flex-1 w-64 ...">
+                   <div>
+                      <div class="text-sm font-bold my-4">
+                        Ranveer Singh dances his heart out, raps at Karan Deol and Drisha Acharya's sangeet ceremony - Indiatimes.com...
+                      </div>
+                      <div class="text-sm my-4 ">
+                        Sunny Deol’s son Karan Deol will tie the knot with his longtime girlfriend, Drisha Acharya, in Mumbai on June 18. The pre-wedding festivities have already kick-started and the couple recently celebrated their sangeet ceremony. The powerhouse of energ...                      </div>
+                      <div class="text-sm ">
+                        <a>TIMESOFINDIA.COM</a>
+                        <a class="text-gray-400">in</a>
+                        <a>News</a>
+                      </div>
+                      <div class="text-sm ">
+                        <a class="text-gray-400">Sat, 17 Jun 2023</a>
+                        <a class="text-gray-400">•</a>
+                        <a class="text-gray-400">3 min read</a>
+                      </div>
+                   </div>
+                </div>
+                <div class="flex-initial w-64 ...">
+                  <img src="img/12.jpg">
+                </div>
+              </div>
+              <div>
+
+              </div>
+            </div> 
+          </div>
+          <div class="flex-auto w-32 ...">
+            <div style="    margin: 0 auto;
+            width: 70%;">
+              <div>
+                <h1 style="margin-bottom: 70px;">
+                
+                </h1>
+              </div>
+              <div>
+                <div>
+                  <h1 class="inline-block text-gray-400 text-4xl">
+                    03
+                  </h1>
+                  <a>News Needs to Meet Its Audiences Where They Are</a>
+                </div>
+                <div class="text-sm ">
+                  <a>Dave Rogers</a>
+                  <a class="text-gray-400">in</a>
+                  <a>News</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div>
+    <div>
+      <div>
+        <div style="margin: 0 auto;
+        width: 85%;
+    ">
+          <div>
+            <div style="margin-bottom: 70px;     margin-left: 65px;">
+              <h1 class="underline underline-offset-4 text-2xl">Events</h1>
+            </div>
+            <div>
+              <div class="flex">
+                <div class="flex-auto w-64 ...">
+                  <div>
+                    <div style="">
+                      
+                    </div>
+                    <div  style="margin : 0 auto;     width: 80%;">
+                      <div class="card">
+                        <div class="flex">
+                          <div class="flex-1 w-64 ...">
+                             <div style="    margin: 0 auto;
+                             width: 90%;">
+                                <div class="text-sm font-bold my-4">
+                                  World Music Day Drum Circle with Rujul
+                                </div>
+                                <div class="text-sm ">
+                                  <a>Dave Rogers</a>
+                                  <a class="text-gray-400">in</a>
+                                  <a>News</a>
+                                </div>
+                                <div class="text-sm ">
+                                  <a class="text-gray-400">June 14</a>
+                                  <a class="text-gray-400">•</a>
+                                  <a class="text-gray-400">3 min read</a>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-initial w-64 ...">
+                            <img src="img/13.webp" style="width: 259px;
+                            height: 200px;">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div>
+      
+                    </div>
+                  </div> 
+                </div>
+                <div class="flex-auto w-64 ...">
+                  <div  style="margin : 0 auto;     width: 80%;">
+                    <div class="card">
+                      <div class="flex">
+                        <div class="flex-1 w-64 ...">
+                           <div style="    margin: 0 auto;
+                           width: 90%;">
+                              <div class="text-sm font-bold my-4">
+                                JEWELLERY WORLD EXHIBITION (Free Entry)
+                              </div>
+                              <div class="text-sm ">
+                                <a>Dave Rogers</a>
+                                <a class="text-gray-400">in</a>
+                                <a>News</a>
+                              </div>
+                              <div class="text-sm ">
+                                <a class="text-gray-400">June 14</a>
+                                <a class="text-gray-400">•</a>
+                                <a class="text-gray-400">3 min read</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="flex-initial w-64 ...">
+                          <img src="img/14.webp" style="width: 259px;
+                          height: 200px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-6">
+              <div class="flex">
+                <div class="flex-auto w-64 ...">
+                  <div>
+                    <div style="">
+                      
+                    </div>
+                    <div  style="margin : 0 auto;     width: 80%;">
+                      <div class="card">
+                        <div class="flex">
+                          <div class="flex-1 w-64 ...">
+                             <div style="    margin: 0 auto;
+                             width: 90%;">
+                                <div class="text-sm font-bold my-4">
+                                  Knowledge Boost Session - Ahmedabad
+                                </div>
+                                <div class="text-sm ">
+                                  <a>Dave Rogers</a>
+                                  <a class="text-gray-400">in</a>
+                                  <a>News</a>
+                                </div>
+                                <div class="text-sm ">
+                                  <a class="text-gray-400">June 14</a>
+                                  <a class="text-gray-400">•</a>
+                                  <a class="text-gray-400">3 min read</a>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="flex-initial w-64 ...">
+                            <img src="img/15.webp" style="width: 259px;
+                            height: 200px;">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div>
+      
+                    </div>
+                  </div> 
+                </div>
+                <div class="flex-auto w-64 ...">
+                  <div  style="margin : 0 auto;    width: 80%;">
+                    <div class="card">
+                      <div class="flex">
+                        <div class="flex-1 w-64 ...">
+                           <div style="    margin: 0 auto;
+                           width: 90%;">
+                              <div class="text-sm font-bold my-4">
+                                Tamil Marathon On-Ground Event 2023
+                              </div>
+                              <div class="text-sm ">
+                                <a>Dave Rogers</a>
+                                <a class="text-gray-400">in</a>
+                                <a>News</a>
+                              </div>
+                              <div class="text-sm ">
+                                <a class="text-gray-400">June 14</a>
+                                <a class="text-gray-400">•</a>
+                                <a class="text-gray-400">3 min read</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="flex-initial w-64 ...">
+                          <img src="img/16.webp" style="width: 259px;
+                          height: 200px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="jobs">
+  <div style="margin: 70px 0px;">
+    <div>
+      <div style="margin: 0 auto;
+      width: 80%;">
+      <div style="margin-bottom: 70px;     margin-left: 30px;">
+        <h1 class="underline underline-offset-4 text-2xl">JOBS</h1>
+      </div>
+        <div class="flex">
+          <div class="flex-1">
+            <div style="margin: 0 auto;
+            width: 90%;">
+              <div>
+                <div class="card-1">
+                  <div>
+                    <div >
+                      <h1>
+                        Content Writer
+                      </h1>
+                    </div>
+                    <div class="my-4">
+                      <div class="inline-block">
+                        <div class="bg-sky-600 text-white" style="    padding: 0px 5px;
+                        border-radius: 20px;
+                        font-size: 15px;
+                    ">
+                          New
+                        </div>
+                      </div>
+                      &nbsp;&nbsp;
+                      <div class="inline-block">
+                        <p class="text-sm">
+                          Hourly 
+                        </p>
+                      </div>
+                      &nbsp;&nbsp;
+                      <div class="inline-block">
+                        <p class="text-sm">
+                          Posted 9 minutes ago
+                        </p>
+                      </div>
+                    </div>
+                    <div class="my-4">
+                      <div>
+                        <div class="flex">
+                          <div class="flex-1">
+                            <div>
+                              <div class="text-lg">
+                                Less than 30 hrs/week
+                              </div>
+                              <div class="text-base">
+                                Hours needed
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex-1">
+                            <div>
+                              <div class="text-lg">
+                                More than 6 months
+                              </div>
+                              <div class="text-base">
+                                Duration
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-4">
+                      <div>
+                        <p>We need a content writer for our new website to write blogs and articles. Check website here. https://tinyurl.com/wkv9at3v Feel free to…</p>
+                      </div>
+                    </div>
+                    <div class="my-4">
+                          <div class="inline-block">
+                            <div>
+                              <div class="inline-block">
+                                <div class="bg-gray-300 " style="    padding: 0px 5px;
+                                border-radius: 20px;
+                                font-size: 15px;
+                            ">
+                                Blog Writing
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="inline-block">
+                          <div>
+                            <div class="inline-block">
+                              <div class="bg-gray-300 " style="    padding: 0px 5px;
+                              border-radius: 20px;
+                              font-size: 15px;
+                          ">
+                              SEO Content
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="inline-block">
+                        <div>
+                          <div class="inline-block">
+                            <div class="bg-gray-300 " style="     padding: 3px 9px;
+                            border-radius: 20px;
+                            font-size: 15px;
+                        ">
+                            Content Writing
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div>
+                      <div class="inline-block">
+                        <div class="bg-green-600 text-white " style="padding: 0px 5px;
+                          border-radius: 20px;
+                          font-size: 15px;
+                      ">
+                          See More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+
+          </div>
+        </div>
+          <div class="flex-1">
+            <div style="margin: 0 auto;
+            width: 90%;">
+              <div>
+                <div class="card-1">
+                  <div>
+                    <div >
+                      <h1>
+                        Looking For AI Writers
+                      </h1>
+                    </div>
+                    <div class="my-4">
+                      <div class="inline-block">
+                        <div class="bg-sky-600 text-white" style="    padding: 0px 5px;
+                        border-radius: 20px;
+                        font-size: 15px;
+                    ">
+                          New
+                        </div>
+                      </div>
+                      &nbsp;&nbsp;
+                      <div class="inline-block">
+                        <p class="text-sm">
+                          Hourly 
+                        </p>
+                      </div>
+                      &nbsp;&nbsp;
+                      <div class="inline-block">
+                        <p class="text-sm">
+                          Posted 9 minutes ago
+                        </p>
+                      </div>
+                    </div>
+                    <div class="my-4">
+                      <div>
+                        <div class="flex">
+                          <div class="flex-1">
+                            <div>
+                              <div>
+                                Less than 30 hrs/week
+                              </div>
+                              <div>
+                                Hours needed
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex-1">
+                            <div>
+                              <div>
+                                1 to 3 months
+                              </div>
+                              <div>
+                                Duration
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-4">
+                      <div>
+                        <p>We are seeking an experienced content writer to help us create blog posts. The ideal candidate should have a strong background in SEO,…</p>
+                      </div>
+                    </div>
+                    <div class="my-4">
+                          <div class="inline-block">
+                            <div>
+                              <div class="inline-block">
+                                <div class="bg-gray-300 " style="    padding: 0px 5px;
+                                border-radius: 20px;
+                                font-size: 15px;
+                            ">
+                                Blog Writing
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="inline-block">
+                          <div>
+                            <div class="inline-block">
+                              <div class="bg-gray-300 " style="    padding: 0px 5px;
+                              border-radius: 20px;
+                              font-size: 15px;
+                          ">
+                              Blog Content
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="inline-block">
+                        <div>
+                          <div class="inline-block">
+                            <div class="bg-gray-300 " style="     padding: 3px 9px;
+                            border-radius: 20px;
+                            font-size: 15px;
+                        ">
+                            Content Writing
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div>
+                      <div class="inline-block">
+                        <div class="bg-green-600 text-white " style="padding: 0px 5px;
+                          border-radius: 20px;
+                          font-size: 15px;
+                      ">
+                          See More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="">
+  <div style="background: #04091e;     padding: 20px 0px;">
+    <div style="    margin: 0 auto;
+    width: 76%;">
+      <div class="flex">
+          <div class="flex-1">
+            <div style="margin: 0 auto;
+            width: 90%;">
+              <div class="my-6">
+                <h1 class="text-white">Top Products</h1>
+              </div>
+              <div>
+                <ul>
+                  <li>Managed Website</li>
+                  <li>Manage Reputation</li>
+                  <li>Power Tools</li>
+                  <li>Marketing Service</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div style="margin: 0 auto;
+            width: 90%;">
+              <div class="my-6">
+                <h1 class="text-white">Quick Links</h1>
+              </div>
+              <div>
+                <ul>
+                  <li>Jobs</li>
+                  <li>Brand Assets</li>
+                  <li>Investor Relations</li>
+                  <li>Terms of Service
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div style="margin: 0 auto;
+            width: 90%;">
+              <div class="my-6">
+                <h1 class="text-white">Features</h1>
+              </div>
+              <div>
+                <ul>
+                  <li>Jobs</li>
+                  <li>Brand Assets</li>
+                  <li>Investor Relations</li>
+                  <li>Terms of Service
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div style="margin: 0 auto;
+            width: 90%;">
+              <div class="my-6">
+                <h1 class="text-white">Resources</h1>
+              </div>
+              <div>
+                <ul>
+                  <li>Guides</li>
+                  <li>Research</li>
+                  <li>Experts</li>
+                  <li>Agencies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div style="margin: 80px 0px;">
+          <div class="flex">
+            <div class="flex-1">
+              <div class="text-base" style="margin: 14px 0px;">
+                <a class="text-white">Copyright ©2023 All rights reserved | This template is made with</a>
+                <i class="fa fa-heart-o text-white"></i>
+                <a class="text-white inline-block">by</a>
+                <a style="    color: #f6214b;">Vaibhav</a>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div style="    margin: 0 auto;
+              width: 20%;">
+                <div>
+                  <div class="flex">
+                    <div class="mx-3">
+                      <div>
+                        <div class="inline-block">
+                          <div  class="h">
+                            <i class="fa fa-facebook text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mx-3">
+                      <div>
+                        <div class="inline-block">
+                          <div  class="h">
+                            <i class="fa fa-twitter text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mx-3">
+                      <div>
+                        <div class="inline-block">
+                          <div class="h">
+                            <i class="fa fa-dribbble text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mx-3">
+                      <div>
+                        <div class="inline-block">
+                          <div  class="h">
+                            <i class="fa fa-behance text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
